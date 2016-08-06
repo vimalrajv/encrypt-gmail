@@ -29,10 +29,7 @@ libcrypto++-dev
 libcrypto++9v5
 Note: libcrypto++ include files are from /usr/include/crypto++. If your libcrypto++ installation is elsewhere please provide the right path in Makefile.
 
-
 RUN:
-
 Run make in the source folder
 Run the executable 'Main' along with by the parameters
-
 - Usage ./Main <username@gmail.com>  <client_secret_json> <DateAfter> <DateBefore> [-verbose]
