@@ -449,12 +449,7 @@ void Main::run()
 	userId = urlencode(userId);
 	if (DEBUG)
 		std::cout << "Main::run : userId (urlencded) " << userId << std::endl;
-	//std::string client_id;
-	//std::string client_secret;	
 	parseClientJson(json_file, client_id, client_secret);
-
-	//std::string accessToken; // = "ya29.Ci82A7x2fwfsgUl06LD88shb0XNt5o5brsXz6OfpWDfH2DJaaJTGUkpKpi7DwqUZeg";
-	//std::string refreshToken;
 	performOAuth(client_id, client_secret, accessToken, refreshToken);
 
 	try
